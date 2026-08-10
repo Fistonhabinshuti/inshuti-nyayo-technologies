@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="rw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Inshuti Nyayo Technologies - Serivisi z'ikoranabuhanga zinoze kandi zihendutse i Kigali.">
+    <meta name="theme-color" content="#0b5cff">
+    <title>Inshuti Nyayo Technologies | Serivisi z'Ikoranabuhanga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader-mark">INT</div><span>Inshuti Nyayo Technologies</span>
+    </div>
+    <header class="site-header" id="header">
+        <div class="container nav-wrap">
+            <a class="brand" href="#home" aria-label="Inshuti Nyayo Technologies home"><span
+                    class="brand-mark">INT</span><span>Inshuti Nyayo <b>Technologies</b></span></a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="#home" data-i18n="nav.home">Ahabanza</a><a href="#about" data-i18n="nav.about">Ibyerekeye</a><a
+                    href="#services" data-i18n="nav.services">Serivisi</a><a href="#gallery"
+                    data-i18n="nav.gallery">Amafoto</a><a href="#contact" data-i18n="nav.contact">Twandikire</a>
+            </nav>
+            <div class="nav-actions">
+                <label class="search-box" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i><input
+                        id="searchInput" type="search" data-i18n-placeholder="search.placeholder"
+                        placeholder="Shakisha..."></label>
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i
+                        class="fa-solid fa-moon"></i></button>
+                <button class="lang-switch" id="langToggle" aria-label="Switch language"><span>RW</span><i
+                        class="fa-solid fa-arrows-rotate"></i><span>EN</span></button>
+                <button class="menu-btn icon-btn" id="menuToggle" aria-label="Open menu"><i
+                        class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-slides">
+                <div class="hero-slide active"
+                    style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=85')">
+                </div>
+                <div class="hero-slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=85')">
+                </div>
+                <div class="hero-slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85')">
+                </div>
+                <div class="hero-slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=85')">
+                </div>
+                <div class="hero-slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2000&q=85')">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="eyebrow light"><span></span><span data-i18n="hero.eyebrow">IKORANABUHANGA RYAGENEWE
+                        WEE</span></div>
+                <h1 data-i18n="hero.title">Serivisi z'Ikoranabuhanga zinoze kandi zihendutse i Kigali</h1>
+                <p data-i18n="hero.text">Dufasha ibitekerezo byawe kuba ibisubizo bifatika, byiza kandi byizewe ku bantu
+                    n'ubucuruzi.</p>
+                <div class="hero-actions"><a href="#services" class="btn btn-primary" data-i18n="hero.cta1">Tangira <i
+                            class="fa-solid fa-arrow-right"></i></a><a href="#contact" class="btn btn-ghost"
+                        data-i18n="hero.cta2">Twandikire</a></div>
+                <div class="hero-trust">
+                    <div><strong>5+</strong><span data-i18n="hero.trust1">Imyaka y'ubunararibonye</span></div>
+                    <div><strong>100%</strong><span data-i18n="hero.trust2">Kwiyemeza umushinga wawe</span></div>
+                </div>
+            </div>
+            <div class="slide-controls"><button id="prevSlide" aria-label="Previous slide"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <div class="slide-dots" id="slideDots"></div><button id="nextSlide" aria-label="Next slide"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="stats-band">
+            <div class="container stats-grid">
+                <div class="stat"><strong class="counter" data-count="120">0</strong><span
+                        data-i18n="stats.projects">Imishinga yarangiye</span></div>
+                <div class="stat"><strong class="counter" data-count="48">0</strong><span
+                        data-i18n="stats.clients">Abakiriya bishimye</span></div>
+                <div class="stat"><strong class="counter" data-count="5">0</strong><span data-i18n="stats.years">Imyaka
+                        y'uburambe</span></div>
+                <div class="stat"><strong class="counter" data-count="24">0</strong><span
+                        data-i18n="stats.support">Inkunga igihe cyose</span></div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container split-grid">
+                <div class="about-visual reveal">
+                        <div class="image-frame"><img src="assets/image/profile-images/my-profile-image.jpg"
+                            alt="Umuyobozi wa Inshuti Nyayo Technologies"><span class="floating-note"><i
+                                class="fa-solid fa-location-dot"></i><b>Kigali, Rwanda</b><small
+                                data-i18n="about.location">Aho dukorera</small></span></div>
+                </div>
+                <div class="about-copy reveal">
+                    <div class="eyebrow"><span></span><span data-i18n="about.eyebrow">KURI TWE</span></div>
+                    <h2 data-i18n="about.title">Ikoranabuhanga ryorohereza ubuzima bwawe.</h2>
+                    <p data-i18n="about.text">Inshuti Nyayo ni umufatanyabikorwa wawe mu ikoranabuhanga. Dushyira hamwe
+                        ubuhanga, ubunyangamugayo n'ibiciro byumvikana kugira ngo ubone igisubizo gihuye n'intego zawe.
+                    </p>
+                    <div class="mission-list">
+                        <div><span class="list-icon"><i class="fa-solid fa-bullseye"></i></span>
+                            <div>
+                                <h3 data-i18n="about.missionTitle">Intego yacu</h3>
+                                <p data-i18n="about.mission">Gutanga serivisi z'ikoranabuhanga zinoze kandi zorohereza
+                                    buri wese.</p>
+                            </div>
+                        </div>
+                        <div><span class="list-icon"><i class="fa-solid fa-eye"></i></span>
+                            <div>
+                                <h3 data-i18n="about.visionTitle">Icyerekezo cyacu</h3>
+                                <p data-i18n="about.vision">Kuba ikiraro cy'udushya n'iterambere ry'ubucuruzi mu Rwanda.
+                                </p>
+                            </div>
+                        </div>
+                    </div><a href="#contact" class="text-link" data-i18n="about.cta">Menya byinshi <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <div class="eyebrow"><span></span><span data-i18n="services.eyebrow">SERIVISI DUTANGA</span>
+                        </div>
+                        <h2 data-i18n="services.title">Ibisubizo bigufasha gutera imbere</h2>
+                    </div>
+                    <p data-i18n="services.intro">Kuva ku gitekerezo kugeza ku gisubizo gikora, turi kumwe nawe kuri
+                        buri ntambwe.</p>
+                </div>
+                <div class="service-grid" id="serviceGrid"></div>
+            </div>
+        </section>
+
+        <section class="section why-section">
+            <div class="container">
+                <div class="why-head">
+                    <div class="eyebrow light"><span></span><span data-i18n="why.eyebrow">IMPAMVU DUKORANA</span></div>
+                    <h2 data-i18n="why.title">Umufatanyabikorwa wizewe ku rugendo rwawe rwa digital</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item reveal"><span>01</span><i class="fa-solid fa-hand-holding-heart"></i>
+                        <h3 data-i18n="why.oneTitle">Dushyira umukiriya imbere</h3>
+                        <p data-i18n="why.one">Tukumva neza icyo ukeneye, tukubakira igisubizo kiguhesha agaciro.</p>
+                    </div>
+                    <div class="why-item reveal"><span>02</span><i class="fa-solid fa-shield-halved"></i>
+                        <h3 data-i18n="why.twoTitle">Ubwizerwe n'ubunyangamugayo</h3>
+                        <p data-i18n="why.two">Itumanaho risobanutse, igihe cyumvikanyweho n'ibisubizo bitagira urujijo.
+                        </p>
+                    </div>
+                    <div class="why-item reveal"><span>03</span><i class="fa-solid fa-lightbulb"></i>
+                        <h3 data-i18n="why.threeTitle">Udushya tworoheje</h3>
+                        <p data-i18n="why.three">Dukoresha ikoranabuhanga rigezweho, ariko tugakomeza kurishyira mu
+                            buryo bworoshye.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <div class="eyebrow"><span></span><span data-i18n="gallery.eyebrow">IBYO TWAKOZE</span></div>
+                        <h2 data-i18n="gallery.title">Ibitekerezo bihinduka ukuri</h2>
+                    </div><a href="#contact" class="text-link" data-i18n="gallery.cta">Tangira umushinga <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="gallery-grid" id="galleryGrid"></div>
+            </div>
+        </section>
+
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="center-heading reveal">
+                    <div class="eyebrow"><span></span><span data-i18n="testimonials.eyebrow">AMAGAMBO Y'ABAKIRIYA</span>
+                    </div>
+                    <h2 data-i18n="testimonials.title">Icyizere cyubakwa n'ibikorwa</h2>
+                </div>
+                <div class="testimonial-grid" id="testimonialGrid"></div>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container split-grid faq-layout">
+                <div class="faq-intro reveal">
+                    <div class="eyebrow"><span></span><span data-i18n="faq.eyebrow">IBIBAZO BIKUNZE KUBAZWA</span></div>
+                    <h2 data-i18n="faq.title">Ufite ikibazo? Turasubiza.</h2>
+                    <p data-i18n="faq.intro">Dore ibisubizo ku bibazo abakiriya bacu batubaza kenshi. Niba utabonye
+                        igisubizo, twandikire.</p><a href="#contact" class="btn btn-primary" data-i18n="faq.cta">Baza
+                        ikibazo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="faq-list" id="faqList"></div>
+            </div>
+        </section>
+
+        <section class="subscribe-band">
+            <div class="container subscribe-content">
+                <div>
+                    <div class="eyebrow light"><span></span><span data-i18n="subscribe.eyebrow">KOMEZA UTEZWE
+                            AMAKURU</span></div>
+                    <h2 data-i18n="subscribe.title">Iyandikishe ubone amakuru mashya</h2>
+                </div>
+                <form id="subscribeForm" class="inline-form"><input type="email" required
+                        data-i18n-placeholder="subscribe.placeholder" placeholder="Aderesi ya email"><button
+                        class="btn btn-dark" data-i18n="subscribe.button">Iyandikishe <i
+                            class="fa-solid fa-arrow-right"></i></button></form>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <div class="eyebrow"><span></span><span data-i18n="contact.eyebrow">TUVUGISHE</span></div>
+                    <h2 data-i18n="contact.title">Igitekerezo cyawe dutangire kukigira ukuri.</h2>
+                    <p data-i18n="contact.intro">Twandikire, tuvugane ku mushinga wawe. Tuzagusubiza mu masaha 24.</p>
+                    <div class="contact-status"><span></span><b>Turi online</b><small>Turasubiza mu masaha 24</small></div>
+                    <div class="contact-details"><a href="tel:+250788404774"><i
+                                class="fa-solid fa-phone"></i><span><small
+                                    data-i18n="contact.phoneLabel">Telefoni</small>+250 788 404 774</span></a><a
+                            href="mailto:hello@inshutinyayo.rw"><i class="fa-solid fa-envelope"></i><span><small
+                                    data-i18n="contact.emailLabel">Email</small>hello@inshutinyayo.rw</span></a>
+                        <div><i class="fa-solid fa-location-dot"></i><span><small data-i18n="contact.locationLabel">Aho
+                                    dukorera</small>Kigali, Rwanda</span></div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-header"><span class="form-step">01</span><div><h3>Tangira ikiganiro</h3><p>Tubwire icyo ukeneye, tuzagufasha gutegura intambwe ikurikira.</p></div></div>
+                    <div class="form-row"><label><span data-i18n="contact.name">Amazina yawe</span><input id="contactName"
+                                name="name" type="text" required placeholder="Jean Mutesi"></label><label><span
+                                data-i18n="contact.email">Email yawe</span><input id="contactEmail" name="email" type="email"
+                                required placeholder="jean@example.com"></label></div>
+                    <label><span data-i18n="contact.message">Ubutumwa</span><textarea id="contactMessage" name="message" rows="5" required
+                            data-i18n-placeholder="contact.messagePlaceholder"
+                            placeholder="Tubwire gato ku mushinga wawe..."></textarea></label><button
+                            class="btn btn-primary" type="submit" data-i18n="contact.button">Ohereza ubutumwa <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                            <small class="form-note"><i class="fa-solid fa-lock"></i> Amakuru yawe abikwa mu ibanga kandi akoreshwa gusa mu kugusubiza.</small>
+                </form>
+            </div>
+            <div class="map-wrap"><iframe title="Map of Kigali"
+                    src="https://www.google.com/maps?q=Kigali%2C%20Rwanda&z=12&output=embed" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">INT</span><span>Inshuti
+                        <b>Nyayo</b></span></a>
+                <p data-i18n="footer.tagline">Ikoranabuhanga ryubaka ejo heza.</p>
+                <div class="socials"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                        href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a><a href="#"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"
+                        aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+            <div>
+                <h3 data-i18n="footer.linksTitle">Aho wanyura</h3><a href="#about"
+                    data-i18n="nav.about">Ibyerekeye</a><a href="#services" data-i18n="nav.services">Serivisi</a><a
+                    href="#gallery" data-i18n="nav.gallery">Amafoto</a><a href="#contact"
+                    data-i18n="nav.contact">Twandikire</a>
+            </div>
+            <div>
+                <h3 data-i18n="footer.servicesTitle">Serivisi</h3><a href="#services"
+                    data-i18n="service.web.title">Kubaka website</a><a href="#services"
+                    data-i18n="service.hosting.title">Hosting</a><a href="#services"
+                    data-i18n="service.design.title">UI/UX Design</a><a href="#services"
+                    data-i18n="service.support.title">IT Support</a>
+            </div>
+            <div class="footer-cta">
+                <h3 data-i18n="footer.ctaTitle">Witeguye gutangira?</h3>
+                <p data-i18n="footer.cta">Reka dukore ikintu cyiza hamwe.</p><a href="#contact"
+                    class="text-link light-link" data-i18n="footer.ctaButton">Twandikire <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span data-i18n="footer.copyright">© 2026 Inshuti Nyayo. Uburenganzira
+                bwose burabitswe.</span><a href="#home" id="backTop" aria-label="Back to top"><i
+                    class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
+    <a class="whatsapp" href="https://wa.me/250788404774" target="_blank" rel="noreferrer"
+        aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span
+            data-i18n="whatsapp">Tuvugane</span></a>
+    <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose"
+            aria-label="Close"><i class="fa-solid fa-xmark"></i></button><img id="lightboxImage" src="" alt=""></div>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
